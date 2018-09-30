@@ -1,0 +1,13 @@
+<div class="container">
+    <h3>Add Memo></h3>
+    <%= form_tag("/add") do %>
+        <div class="form-group">
+            <%= label_tag "form-title","Title" %>
+            <%= text_field :memos,:title , id:"form-title",class:"form-control",placeholder:"Title" %> 
+            <%= label_tag "form-body","Content" %>
+            <%= text_field :memos,:body , id:"form-title",class:"form-control",placeholder:"Content" %>
+        </div>
+        <%= submit_tag "Add",class:"btn btn-success" %>
+    <% end %>
+    
+</div>
