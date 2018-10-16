@@ -20,7 +20,6 @@ class MemosController < ApplicationController
     #メモ編集ページ
     def edit
         @memo = Memo.find(params["id"])
-    
     end
     def update
         update_memo = Memo.find(params["id"])
